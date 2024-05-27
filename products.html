@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - FORLAND Perú</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .product-gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        .product {
+            flex: 0 1 calc(16% - 20px); /* 每行6个产品 */
+            box-sizing: border-box;
+            margin: 10px;
+            text-align: center;
+            background: #fff;
+            padding: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            transition: transform 0.2s;
+        }
+        .product:hover {
+            transform: scale(1.05);
+        }
+        .product img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .product h3 {
+            font-size: 1em;
+            margin: 10px 0 0;
+            min-height: 2em; /* 设置最小高度以确保统一 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/Logo.png" alt="FORLAND Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="about.html">Acerca de FORLAND</a></li>
+                <li class="dropdown">
+                    <a href="products.html" class="dropbtn">Productos</a>
+                    <div class="dropdown-content">
+                        <a href="mini-trucks.html">Liviano</a>
+                        <a href="light-trucks.html">Camiones</a>
+                        <a href="Dumper-trucks.html">Volquetas</a>
+                    </div>
+                </li>
+                <li><a href="locations.html">Tienda</a></li>
+                <li><a href="workshop.html">Taller</a></li>
+                <li><a href="repuesto.html">Repuesto</a></li>
+                <li><a href="maintenance.html">Mantenimiento</a></li>
+                <li><a href="warranty.html">Garantía</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="products">
+            <h2>Nuestros Productos</h2>
+            <div class="product-gallery">
+                <a href="mini-trucks.html#F160" class="product">
+                    <img src="images/F160.png" alt="F160">
+                    <h3>F160</h3>
+                </a>
+                <a href="mini-trucks.html#F160CB" class="product">
+                    <img src="images/F160CB.png" alt="F160CB">
+                    <h3>F160CB</h3>
+                </a>
+                <a href="mini-trucks.html#F160DC" class="product">
+                    <img src="images/F160DC.png" alt="F160DC">
+                    <h3>F160DC</h3>
+                </a>
+                <a href="mini-trucks.html#F190" class="product">
+                    <img src="images/F190.jpg" alt="F190">
+                    <h3>F190</h3>
+                </a>
+                <a href="mini-trucks.html#F190CB" class="product">
+                    <img src="images/F190CB.jpg" alt="F190CB">
+                    <h3>F190CB</h3>
+                </a>
+                <a href="mini-trucks.html#F190DC" class="product">
+                    <img src="images/F190DC.jpg" alt="F190DC">
+                    <h3>F190DC</h3>
+                </a>
+                <a href="mini-trucks.html#F190Pro" class="product">
+                    <img src="images/F190Pro.jpg" alt="F190Pro">
+                    <h3>F190Pro</h3>
+                </a>
+                <a href="mini-trucks.html#F190ProCB" class="product">
+                    <img src="images/F190ProCB.jpg" alt="F190ProCB">
+                    <h3>F190Pro CB</h3>
+                </a>
+                <a href="mini-trucks.html#F190ProDC" class="product">
+                    <img src="images/F190ProDC.jpg" alt="F190ProDC">
+                    <h3>F190Pro DC</h3>
+                </a>
+                <a href="light-trucks.html#F200" class="product">
+                    <img src="images/F200.jpg" alt="F200">
+                    <h3>F200</h3>
+                </a>
+                <a href="light-trucks.html#F200CB" class="product">
+                    <img src="images/F200CB.jpg" alt="F200CB">
+                    <h3>F200CB</h3>
+                </a>
+                <a href="light-trucks.html#F200REF" class="product">
+                    <img src="images/F200REF.jpg" alt="F200REF">
+                    <h3>F200REF</h3>
+                </a>
+                <a href="light-trucks.html#F200W" class="product">
+                    <img src="images/F200W.jpg" alt="F200W">
+                    <h3>F200W</h3>
+                </a>
+                <a href="light-trucks.html#F300DC" class="product">
+                    <img src="images/F300NDC.png" alt="F300DC">
+                    <h3>F300DC</h3>
+                </a>
+                <a href="light-trucks.html#F300VIP" class="product">
+                    <img src="images/F300VIP.png" alt="F300VIP">
+                    <h3>F300VIP</h3>
+                </a>
+                <a href="light-trucks.html#F300VIPCB" class="product">
+                    <img src="images/F300VIPCB.png" alt="F300VIPCB">
+                    <h3>F300VIPCB</h3>
+                </a>
+                <a href="light-trucks.html#F400VIP" class="product">
+                    <img src="images/F400VIP.png" alt="F400VIP">
+                    <h3>F400VIP</h3>
+                </a>
+                <a href="light-trucks.html#F400VIPCB" class="product">
+                    <img src="images/F400VIPCB.png" alt="F400VIPCB">
+                    <h3>F400VIPCB</h3>
+                </a>
+                <a href="light-trucks.html#F400VIPDC" class="product">
+                    <img src="images/F400VIPDC.jpg" alt="F400VIPDC">
+                    <h3>F400VIPDC</h3>
+                </a>
+                <a href="light-trucks.html#F500VIP" class="product">
+                    <img src="images/F500VIP.jpg" alt="F500VIP">
+                    <h3>F500VIP</h3>
+                </a>
+                <a href="light-trucks.html#F500VIPCB" class="product">
+                    <img src="images/F500VIPCB.jpg" alt="F500VIPCB">
+                    <h3>F500VIPCB</h3>
+                </a>
+                <a href="light-trucks.html#F600VIP" class="product">
+                    <img src="images/F600VIP.png" alt="F600VIP">
+                    <h3>F600VIP</h3>
+                </a>
+                <a href="light-trucks.html#F600CVIP" class="product">
+                    <img src="images/F600CVIP.png" alt="F600CVIP">
+                    <h3>F600CVIP</h3>
+                </a>
+                <a href="light-trucks.html#F700VIP" class="product">
+                    <img src="images/F700VIP.png" alt="F700VIP">
+                    <h3>F700VIP</h3>
+                </a>
+                <a href="light-trucks.html#F1100CH" class="product">
+                    <img src="images/F1100CH.jpg" alt="F1100CH">
+                    <h3>F1100CH</h3>
+                </a>
+                <a href="light-trucks.html#F1300CH" class="product">
+                    <img src="images/F1300CH.png" alt="F1300CH">
+                    <h3>F1300CH</h3>
+                </a>
+                <a href="dumper-trucks.html#FD250" class="product">
+                    <img src="images/FD250.jpg" alt="FD250">
+                    <h3>FD250</h3>
+                </a>
+                <a href="dumper-trucks.html#FD400NYC" class="product">
+                    <img src="images/FD400NYC.jpg" alt="FD400NYC">
+                    <h3>FD400NYC</h3>
+                </a>
+                <a href="dumper-trucks.html#FD400" class="product">
+                    <img src="images/FD400.jpg" alt="FD400">
+                    <h3>FD400</h3>
+                </a>
+                <a href="dumper-trucks.html#FD600" class="product">
+                    <img src="images/FD600.jpg" alt="FD600">
+                    <h3>FD600</h3>
+                </a>
+                <a href="dumper-trucks.html#FD800" class="product">
+                    <img src="images/FD800.jpg" alt="FD800">
+                    <h3>FD800</h3>
+                </a>
+                <a href="dumper-trucks.html#FD800N" class="product">
+                    <img src="images/FD800N.jpg" alt="FD800N">
+                    <h3>FD800N</h3>
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 FORLAND International. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
